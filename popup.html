@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- TODO: create a missed songs window
+			TODO: Create an input box for playlist title
+		-->
+	<!-- Meta -->
+	<meta charset="UTF-8">
+
+	<!-- Link -->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<!-- Strange bug, when i only had one search box, js threw unrefferncederror, so
+	i add the playlist box as well and hid it -->
+
+</head>
+
+<!-- MAIN -->
+
+<body>
+
+	<header>
+
+		<div class="container">
+			<div class="row">
+				<div id="cssmenu">
+					<ul>
+						<li class="active"><a href="#">Playlist</a></li>
+<!-- 						<li><a href="Single.html">URL</a></li> -->
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+
+
+	<div id='main'>
+		<div class="Form">
+
+			<form action="" id="main">
+				<!-- The input belove is hidden -->
+				<input type="search" name="url" id="url" value="" style="display: none;">
+
+				<p> Enter the link to the playlist
+				</p>
+				<div class="group" style="margin-top: 10%;">
+					<input type="search" name="playlist">
+
+					<span class="bar"></span>
+					<p>
+						For playlist consisting of more than 100 songs, the process may take a while
+					</p>
+				</div>
+
+
+				<input type="submit" value="Next" id="Submit_Button">
+			</form>
+		</div>
+	</div>
+
+
+	<!--
+The jquery file is imported locally to deal with google's Content Security.
+IF needed it can be imported over the net if manifest is modified
+http://stackoverflow.com/questions/25867584/extension-refuses-to-load-the-script-due-to-content-security-policy-directive
+
+But i found, that it is easier to just save it locally.
+
+ -->
+
+
+
+
+	<script src="jquery_3.2.1_min.js"></script>
+	<script src="script.js"></script>
+	<script src="SpotifyAuth.js"></script>
+	<script src="GoogleAPI.js"></script>
+	<script src="SpotifyAPI.js"></script>
+	<script src="StringExtr.js"></script>
+
+
+</body>
+
+</html>

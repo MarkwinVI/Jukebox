@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Jukebox - Processing the Playlist</title>
+  <style media="screen">
+    html {
+      background-color: #1ED760;
+    }
+  </style>
+  <script src="GoogleAPI.js"></script>
+  <script src="SpotifyAuth.js"></script>
+  <script src="StringExtr.js"></script>
+  <script src="SpotifyAPI.js"></script>
+</head>
+
+<body>
+
+  <p style="font-size: 55px; font-weight: bold; color: white;" id="Loading_Title">Creating your playlist...</p>
+  <br>
+  <div class="spinner" id="spinner_animation">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div>
+
+  <div id="log" style="color: white;">
+    <p id="progress_indicator" style="color: white;"></p>
+  </div>
+
+  <ul id="failed_list" style="color: white;">
+  </ul>
+
+      <form id="NameCreation" style="display: none;">
+        <!-- The input belove is hidden -->
+        <input type="search" name="url" id="url" value="" style="display: none;">
+
+        
+        <div class="group" style="margin-top: 10%;">
+          <h1 style = "color: white; font-weight: bold;"> Choose a name for your Playlist to proceed</h1>
+          <input type="search" name="playlist_name" required="true" style="background-color: #1ED760; color: white;">
+
+          <span class="bar"></span>
+         
+        </div>
+
+
+        <input type="submit" value="Submit" id="Submit_Button" style="color: white; font-weight: bold;">
+      </form>
+
+  <script src="jquery_3.2.1_min.js"></script>
+  <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>

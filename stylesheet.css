@@ -1,0 +1,266 @@
+/*-------------------------*\
+  #BODY
+\*-------------------------*/
+
+body{
+	text-align: center;
+	min-width: 250px;
+	min-height: 180px;
+
+}
+/*-------------------------*\
+  #<p>
+\*-------------------------*/
+p{
+	color:  #1ED760;
+}
+/*-------------------------*\
+  #Form-Submit Button
+\*-------------------------*/
+#Submit_Button{
+  margin-top: 20px;
+width: 100%;
+height: 3em;
+border: none;
+background-color: #1ED760;
+cursor:pointer;
+}
+/*-------------------------*\
+  #NAV-BAR (https://bootsnipp.com/snippets/WPxN0)
+\*-------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+#cssmenu {
+  width: auto;
+  border-bottom: 3px solid #1ED760;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+
+}
+#cssmenu{
+    outline:none;
+}
+#cssmenu ul {
+  background: #ffffff;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+  margin-left: -4px;
+}
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding: 18px 25px 12px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+  outline:0;
+}
+
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+}
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+  background: #1ED760;
+}
+
+/*-------------------------*\
+  #LOADING ANIMATION
+\*-------------------------*/
+.spinner {
+  margin: 100px auto;
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: white;
+  height: 100%;
+  width: 16px;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+/*------------------*\
+Input fields
+\*------------------*/
+
+
+.group {
+   position: relative;
+   /*margin-bottom: 45px;*/
+}
+
+input {
+   font-size: 18px;
+   padding: 10px 10px 10px 5px;
+   display: block;
+   width: 100%;
+   border: none;
+   border-bottom: 1px solid #757575 ;
+}
+
+   input:focus {
+       outline: none;
+   }
+
+/* LABEL ======================================= */
+label {
+   color: #999;
+   font-size: 18px;
+   font-weight: normal;
+   position: absolute;
+   pointer-events: none;
+   left: 5px;
+   top: 10px;
+   transition: 0.2s ease all;
+   -moz-transition: 0.2s ease all;
+   -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+   top: -20px;
+   font-size: 14px;
+   color: rgb(42, 46, 41) ;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+   position: relative;
+   display: block;
+   width: 100%;
+}
+
+   .bar:before, .bar:after {
+       content: '';
+       height: 2px;
+       width: 0;
+       bottom: 1px;
+       position: absolute;
+       background: #5264AE ;
+       transition: 0.2s ease all;
+       -moz-transition: 0.2s ease all;
+       -webkit-transition: 0.2s ease all;
+   }
+
+   .bar:before {
+       left: 50%;
+   }
+
+   .bar:after {
+       right: 50%;
+   }
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+   width: 50%;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Meta -->
+	<meta charset="UTF-8">
+
+	<!-- Link -->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<!-- Strange bug, when i only had one search box, js threw unrefferncederror, so
+	i add the playlist box as well and hid it -->
+	<style>
+		#playlist {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>
+
+		<div class="container">
+			<div class="row">
+				<div id="cssmenu">
+					<ul>
+						<li><a href="popup.html">Playlist</a></li>
+<!-- 						<li class="active"><a href="#">URL</a></li> -->
+						<li><a href="Settings.html"><img src="setting_icon.png" height="13px" width="13px"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<div id='main'>
+		<div class="Form">
+			<p>Add an URL link</p>
+			<form action="">
+				<div class="group" style="margin-top: 10%;">
+					<input type="search" name="url">
+
+					<span class="bar"></span>
+
+				</div>
+				<!-- The input belove is hidden -->
+				<input type="search" name="playlist" value="" id="playlist" style="width: 85%; height: 10%;">
+
+				<br><br>
+
+				<input type="submit" value="Next" id="Submit_Button">
+			</form>
+		</div>
+
+	</div>
+
+
+
+	<script src="jquery_3.2.1_min.js"></script>
+	<script src="script.js"></script>
+	<script src="SpotifyAuth.js"></script>
+	<script src="GoogleAPI.js"></script>
+	<script src="SpotifyAPI.js"></script>
+	<script src="StringExtr.js"></script>
+
+</body>
+
+</html>
